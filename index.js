@@ -28,7 +28,6 @@ async function run() {
             const cursor = servicesCollection.find({});
             const services = await cursor.toArray();
             response.send(services);
-
         });
 
         // get specific service details
